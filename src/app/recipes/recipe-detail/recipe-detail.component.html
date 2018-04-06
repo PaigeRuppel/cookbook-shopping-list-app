@@ -1,18 +1,18 @@
 <div class="row">
   <div class="col-xs-12">
-    <img src="" alt="" class="img-responsive">
+    <img class="expanded-recipe-image img-responsive" [src]="recipe.imageUrl" alt="{{ recipe.name }}">
   </div>
 </div>
 
 <div class="row">
   <div class="col-xs-12">
-    <h2>Recipe Name</h2>
+    <h2>{{ recipe.name }}</h2>
   </div>
 </div>
 
 <div class="row">
   <div class="col-xs-12">
-    <div class="btn-group">
+    <div class="btn-group" appDropdown>
       <button type="button" class="btn btn-primary dropdown-toggle">Manage Recipe <span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li><a href="#">To Shopping List</a></li>
